@@ -1,0 +1,165 @@
+:root {
+    --paper: #F8F5EE;
+    --paper-warm: #EFE5D2;
+    --ink: #1C1C20;
+    --muted: #6F6A60;
+    --accent: #1F3962;
+    --divider: #E1DBC8;
+    --code-bg: #F1EBDB;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --paper: #14141A;
+        --paper-warm: #0A0A0F;
+        --ink: #F1F1F5;
+        --muted: #8E8E94;
+        --accent: #7FA4D8;
+        --divider: #2D2D33;
+        --code-bg: #1A1A20;
+    }
+}
+
+* { box-sizing: border-box; }
+
+html {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    max-width: 680px;
+}
+
+h1 {
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.4em;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2.4em 0 0.6em;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.8em 0 0.4em;
+}
+
+p {
+    margin: 0.8em 0;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+    transition: opacity 0.15s;
+}
+
+a:hover { opacity: 0.7; }
+
+ul {
+    padding-left: 1.4em;
+}
+
+li {
+    margin: 0.4em 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 4em 0 3em;
+}
+
+code {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    background: var(--code-bg);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.brand-block {
+    text-align: center;
+    margin: 3em 0 4em;
+}
+
+.brand-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 1.4em;
+}
+
+.wordmark {
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.04em;
+}
+
+.wordmark .dim {
+    opacity: 0.28;
+    font-weight: 400;
+}
+
+.tagline {
+    color: var(--muted);
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
+    margin: 0.6em 0 0;
+    font-size: 0.95rem;
+}
+
+.nav {
+    margin: 3em 0 0;
+    padding-top: 2em;
+    border-top: 1px solid var(--divider);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6em;
+}
+
+.nav a {
+    color: var(--muted);
+    border: none;
+    font-size: 0.92rem;
+}
+
+.footer {
+    margin-top: 4em;
+    padding-top: 1.6em;
+    border-top: 1px solid var(--divider);
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.footer p { margin: 0.4em 0; }
+
+@media (max-width: 480px) {
+    body { padding: 32px 20px 60px; }
+    h1 { font-size: 1.7rem; }
+    .wordmark { font-size: 2.1rem; }
+    .brand-icon { width: 80px; height: 80px; border-radius: 18px; }
+}
