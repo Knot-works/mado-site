@@ -1,22 +1,24 @@
+/*
+ * Mado site palette — アプリ本体の `Palette.light` / `Palette.dark` と
+ * RGB レベルで完全一致させてある。
+ */
 :root {
-    --paper: #F8F5EE;
-    --paper-warm: #EFE5D2;
-    --ink: #1C1C20;
-    --muted: #6F6A60;
-    --accent: #1F3962;
-    --divider: #E1DBC8;
-    --code-bg: #F1EBDB;
+    --paper: #F8F7F2;          /* MadoColor.paper  (light) */
+    --ink: #1D1D20;            /* MadoColor.ink    (light) */
+    --muted: #6F6B64;          /* MadoColor.muted  (light) */
+    --accent: #1F3963;         /* MadoColor.accent (light) */
+    --divider: #E1DED7;        /* MadoColor.divider (light) */
+    --code-bg: #F3F1EA;        /* MadoColor.codeBg (light) */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --paper: #14141A;
-        --paper-warm: #0A0A0F;
-        --ink: #F1F1F5;
-        --muted: #8E8E94;
-        --accent: #7FA4D8;
-        --divider: #2D2D33;
-        --code-bg: #1A1A20;
+        --paper: #141417;      /* MadoColor.paper  (dark)  */
+        --ink: #F1F1F5;        /* MadoColor.ink    (dark)  */
+        --muted: #8F8E94;      /* MadoColor.muted  (dark)  */
+        --accent: #7FA4D8;     /* MadoColor.accent (dark)  */
+        --divider: #3A3A3F;    /* MadoColor.divider (dark) */
+        --code-bg: #26262B;    /* MadoColor.codeBg (dark)  */
     }
 }
 
@@ -58,9 +60,7 @@ h3 {
     margin: 1.8em 0 0.4em;
 }
 
-p {
-    margin: 0.8em 0;
-}
+p { margin: 0.8em 0; }
 
 a {
     color: var(--accent);
@@ -72,13 +72,8 @@ a {
 
 a:hover { opacity: 0.7; }
 
-ul {
-    padding-left: 1.4em;
-}
-
-li {
-    margin: 0.4em 0;
-}
+ul { padding-left: 1.4em; }
+li { margin: 0.4em 0; }
 
 hr {
     border: none;
@@ -108,7 +103,7 @@ code {
     width: 96px;
     height: 96px;
     border-radius: 22px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     margin-bottom: 1.4em;
 }
 
